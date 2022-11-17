@@ -2,6 +2,7 @@
 namespace RandikaSrimal\HubspotCard\Controllers;
 
 use RandikaSrimal\HubspotCard\HubspotCard;
+use Illuminate\Http\Request;
 
 class HubspotCardController
 {
@@ -9,7 +10,7 @@ class HubspotCardController
         return view('hubspot-card::index');
     }
 
-    public function data(HubspotCard $hubspotCard) {
-        return response()->json($hubspotCard->getCardData(1), 200);
+    public function data(HubspotCard $hubspotCard, Request $request) {
+        return response()->json($hubspotCard->getCardData($request->associatedObjectId), 200);
     }
 }
