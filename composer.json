@@ -1,0 +1,16 @@
+{
+    "name": "randika-srimal/hubspot-card",
+    "description": "This package is an boilerplate for intergate HubSpot Card",
+    "autoload": {
+        "psr-4": {
+            "RandikaSrimal\\HubspotCard\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Randika Dissanayaka",
+            "email": "email2randika@gmail.com"
+        }
+    ],
+    "require": {}
+}
