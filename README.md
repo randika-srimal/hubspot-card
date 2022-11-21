@@ -13,7 +13,7 @@
 ]
 ```
 
-2. Install the composer package by executing `composer require randika-srimal/hubspot-card`.
+2. Install the composer package by executing `composer require eio/hubspot-card`.
 
 3. Open project terminal and execute `php artisan hubspot-card:install`. This will add the required routes, controllers and resources to your project.
 

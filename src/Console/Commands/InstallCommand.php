@@ -38,6 +38,9 @@ class InstallCommand extends Command
 
         if (!file_exists(base_path('routes/hubspot-card.php'))) {
             copy(__DIR__ . '/../../routes/hubspot-card.php', base_path('routes/hubspot-card.php'));
+
+            $requireRoutes = "require __DIR__.'/hubspot-card.php';";
+            file_put_contents(base_path('routes/web.php'), PHP_EOL.$requireRoutes.PHP_EOL , FILE_APPEND | LOCK_EX);
         }
 
         return 1;

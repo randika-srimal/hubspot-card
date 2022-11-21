@@ -20,11 +20,5 @@ class HubspotCardServiceProvider extends ServiceProvider
                 InstallCommand::class,
             ]);
         }
-        
-        $this->routes(function () {
-            Route::middleware('web')
-                ->group(base_path('routes/hubspot-card.php'));
-        });
-        
     }
 }
