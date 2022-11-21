@@ -6,7 +6,7 @@ use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvi
 use Illuminate\Support\Facades\Route;
 use EIO\HubspotCard\Console\Commands\InstallCommand;
 
-class HubspotCardProvider extends ServiceProvider
+class HubspotCardServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap services.
