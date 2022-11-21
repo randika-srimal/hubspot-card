@@ -2,7 +2,9 @@
 
 namespace RandikaSrimal\HubspotCard\Providers;
 
-use Illuminate\Support\ServiceProvider;
+use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
+use Illuminate\Support\Facades\Route;
+use RandikaSrimal\HubspotCard\Console\Commands\InstallCommand;
 
 class HubspotCardProvider extends ServiceProvider
 {
@@ -13,7 +15,16 @@ class HubspotCardProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
-        $this->loadViewsFrom(__DIR__.'/../views', 'hubspot-card');
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                InstallCommand::class,
+            ]);
+        }
+        
+        $this->routes(function () {
+            Route::middleware('web')
+                ->group(base_path('routes/hubspot-card.php'));
+        });
+        
     }
 }
