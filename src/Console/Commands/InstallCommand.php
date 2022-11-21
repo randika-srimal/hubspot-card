@@ -1,6 +1,6 @@
 <?php
 
-namespace RandikaSrimal\HubspotCard\Console\Commands;
+namespace EIO\HubspotCard\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;

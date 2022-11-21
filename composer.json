@@ -2,9 +2,7 @@
     "name": "randika-srimal/hubspot-card",
     "description": "This package is an boilerplate for intergate HubSpot Card",
     "autoload": {
-        "psr-4": {
-            "RandikaSrimal\\HubspotCard\\": "src/"
-        }
+        "psr-4": {}
     },
     "authors": [
         {
@@ -18,7 +16,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "RandikaSrimal\\HubspotCard\\Providers\\HubspotCardProvider"
+                "EIO\\HubspotCard\\Providers\\HubspotCardProvider"
             ]
         }
     }
