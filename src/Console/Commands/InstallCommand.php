@@ -28,6 +28,10 @@ class InstallCommand extends Command
      */
     public function handle()
     {
+        if (!file_exists(config_path('hubspot_card.php'))) {
+            copy(__DIR__ . '/../../config/hubspot_card.php', config_path('hubspot_card.php'));
+        }
+
         if (!file_exists(app_path('Http/Controllers/HubspotCardController.php'))) {
             copy(__DIR__ . '/../../Controllers/HubspotCardController.php', app_path('Http/Controllers/HubspotCardController.php'));
         }
