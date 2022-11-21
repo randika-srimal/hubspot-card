@@ -2,7 +2,9 @@
     "name": "eio/hubspot-card",
     "description": "This package is an boilerplate for intergate HubSpot Card",
     "autoload": {
-        "psr-4": {}
+        "psr-4": {
+            "EIO\\HubspotCard\\": "src/"
+        }
     },
     "authors": [
         {
