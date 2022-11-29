@@ -1,23 +1,12 @@
-# EIO HubSpot Card Boilerplate for Laravel
+# HubSpot Card Boilerplate for Laravel
 
 ## How to install the package
 
-1. Add github repo to the project's root `composer.json` file.
+1. Install the composer package by executing `composer require randika-srimal/hubspot-card`.
 
-```
-"repositories": [
-    {
-        "type": "vcs",
-        "url": "https://github.com/randika-srimal/hubspot-card"
-    }
-]
-```
+2. Open project terminal and execute `php artisan hubspot-card:install`. This will add the required routes, controllers and resources to your project.
 
-2. Install the composer package by executing `composer require eio/hubspot-card`.
-
-3. Open project terminal and execute `php artisan hubspot-card:install`. This will add the required routes, controllers and resources to your project.
-
-4. HubSpot Card data get route is `/hubspot-card/data`. Card view will be available at `/hubspot-card`. You may change these if required.
+3. HubSpot Card data get route is `/hubspot-card/data`. Card view will be available at `/hubspot-card`. You may change these if required.
 
 ### Important
 

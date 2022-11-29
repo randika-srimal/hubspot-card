@@ -1,10 +1,10 @@
 <?php
 
-namespace EIO\HubspotCard\Providers;
+namespace RandikaSrimal\HubspotCard\Providers;
 
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Route;
-use EIO\HubspotCard\Console\Commands\InstallCommand;
+use RandikaSrimal\HubspotCard\Console\Commands\InstallCommand;
 
 class HubspotCardServiceProvider extends ServiceProvider
 {
