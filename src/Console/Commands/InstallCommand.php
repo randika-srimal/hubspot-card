@@ -37,6 +37,7 @@ class InstallCommand extends Command
         }
 
         if (!file_exists(resource_path('views/hubspot-card/index.blade.php'))) {
+            mkdir(resource_path('views/hubspot-card'));
             copy(__DIR__ . '/../../resources/views/index.blade.php', resource_path('views/hubspot-card/index.blade.php'));
         }
 
